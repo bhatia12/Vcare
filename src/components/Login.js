@@ -24,7 +24,6 @@ const Login = (props) => {
     console.log(formValue);
     setLoading(true);
     dispatch(loginUser({ userName, password }))
-    localStorage.getItem("tokenID") !== "undefined" ? props.history.push('/') : props.history.push('/login')
 
   };
 
